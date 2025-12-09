@@ -24,10 +24,9 @@
                 <description></description>
                 <returnType type="Boolean" />
             </property>
-            <property key="showLineNumbers" type="expression" required="false" defaultValue="true">
+            <property key="showLineNumbers" type="boolean" defaultValue="true">
                 <caption>Show line numbers</caption>
                 <description></description>
-                <returnType type="Boolean" />
             </property>
             <property key="invalidXmlMessage" type="textTemplate">
                 <caption>Invalid XML message</caption>

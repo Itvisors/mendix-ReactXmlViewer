@@ -1,6 +1,7 @@
 /*
 Place your custom CSS here
 */
-.react-xml-viewer-widget {
-
+.react-xml-viewer-invalid-xml {
+    color: #e33f4e;
+    font-weight: bold;
 }

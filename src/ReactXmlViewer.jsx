@@ -5,7 +5,7 @@ import { Viewer } from "./components/Viewer";
 import "./ui/ReactXmlViewer.css";
 
 export function ReactXmlViewer(props) {
-    if (!props.xml?.value) {
+    if (!props.xmlAttr?.value) {
         return null;
     }
 
