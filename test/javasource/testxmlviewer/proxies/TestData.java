@@ -2,7 +2,7 @@
 //
 // WARNING: Code you write here will be lost the next time you deploy the project.
 
-package testjsonviewlite.proxies;
+package testxmlviewer.proxies;
 
 public class TestData implements com.mendix.systemwideinterfaces.core.IEntityProxy
 {
@@ -13,7 +13,7 @@ public class TestData implements com.mendix.systemwideinterfaces.core.IEntityPro
 	/**
 	 * Internal name of this entity
 	 */
-	public static final java.lang.String entityName = "TestJsonViewLite.TestData";
+	public static final java.lang.String entityName = "TestXmlViewer.TestData";
 
 	/**
 	 * Enum describing members of this entity
@@ -21,7 +21,7 @@ public class TestData implements com.mendix.systemwideinterfaces.core.IEntityPro
 	public enum MemberNames
 	{
 		Name("Name"),
-		JSON("JSON");
+		XML("XML");
 
 		private final java.lang.String metaName;
 
@@ -62,23 +62,23 @@ public class TestData implements com.mendix.systemwideinterfaces.core.IEntityPro
 	 * @param mendixObject The Mendix object for the new instance
 	 * @return a new instance of this proxy class
 	 */
-	public static testjsonviewlite.proxies.TestData initialize(com.mendix.systemwideinterfaces.core.IContext context, com.mendix.systemwideinterfaces.core.IMendixObject mendixObject)
+	public static testxmlviewer.proxies.TestData initialize(com.mendix.systemwideinterfaces.core.IContext context, com.mendix.systemwideinterfaces.core.IMendixObject mendixObject)
 	{
-		return new testjsonviewlite.proxies.TestData(context, mendixObject);
+		return new testxmlviewer.proxies.TestData(context, mendixObject);
 	}
 
-	public static testjsonviewlite.proxies.TestData load(com.mendix.systemwideinterfaces.core.IContext context, com.mendix.systemwideinterfaces.core.IMendixIdentifier mendixIdentifier) throws com.mendix.core.CoreException
+	public static testxmlviewer.proxies.TestData load(com.mendix.systemwideinterfaces.core.IContext context, com.mendix.systemwideinterfaces.core.IMendixIdentifier mendixIdentifier) throws com.mendix.core.CoreException
 	{
 		com.mendix.systemwideinterfaces.core.IMendixObject mendixObject = com.mendix.core.Core.retrieveId(context, mendixIdentifier);
-		return testjsonviewlite.proxies.TestData.initialize(context, mendixObject);
+		return testxmlviewer.proxies.TestData.initialize(context, mendixObject);
 	}
 
-	public static java.util.List<testjsonviewlite.proxies.TestData> load(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String xpathConstraint) throws com.mendix.core.CoreException
+	public static java.util.List<testxmlviewer.proxies.TestData> load(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String xpathConstraint) throws com.mendix.core.CoreException
 	{
 		return com.mendix.core.Core.createXPathQuery(String.format("//%1$s%2$s", entityName, xpathConstraint))
 			.execute(context)
 			.stream()
-			.map(obj -> testjsonviewlite.proxies.TestData.initialize(context, obj))
+			.map(obj -> testxmlviewer.proxies.TestData.initialize(context, obj))
 			.collect(java.util.stream.Collectors.toList());
 	}
 
@@ -119,39 +119,39 @@ public class TestData implements com.mendix.systemwideinterfaces.core.IEntityPro
 	}
 
 	/**
-	 * @return value of JSON
+	 * @return value of XML
 	 */
-	public final java.lang.String getJSON()
+	public final java.lang.String getXML()
 	{
-		return getJSON(getContext());
+		return getXML(getContext());
 	}
 
 	/**
 	 * @param context
-	 * @return value of JSON
+	 * @return value of XML
 	 */
-	public final java.lang.String getJSON(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getXML(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (java.lang.String) getMendixObject().getValue(context, MemberNames.JSON.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.XML.toString());
 	}
 
 	/**
-	 * Set value of JSON
-	 * @param json
+	 * Set value of XML
+	 * @param xml
 	 */
-	public final void setJSON(java.lang.String json)
+	public final void setXML(java.lang.String xml)
 	{
-		setJSON(getContext(), json);
+		setXML(getContext(), xml);
 	}
 
 	/**
-	 * Set value of JSON
+	 * Set value of XML
 	 * @param context
-	 * @param json
+	 * @param xml
 	 */
-	public final void setJSON(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String json)
+	public final void setXML(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String xml)
 	{
-		getMendixObject().setValue(context, MemberNames.JSON.toString(), json);
+		getMendixObject().setValue(context, MemberNames.XML.toString(), xml);
 	}
 
 	@java.lang.Override
@@ -174,7 +174,7 @@ public class TestData implements com.mendix.systemwideinterfaces.core.IEntityPro
 		}
 		if (obj != null && getClass().equals(obj.getClass()))
 		{
-			final testjsonviewlite.proxies.TestData that = (testjsonviewlite.proxies.TestData) obj;
+			final testxmlviewer.proxies.TestData that = (testxmlviewer.proxies.TestData) obj;
 			return getMendixObject().equals(that.getMendixObject());
 		}
 		return false;

@@ -8,10 +8,37 @@
     <icon/>
     <properties>
         <propertyGroup caption="General">
-            <property key="sampleText" type="string" required="false">
-                <caption>Default value</caption>
-                <description>Sample text input</description>
+            <property key="xmlAttr" type="attribute" setLabel="true"> 
+                <caption>XML attribute</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
             </property>
+            <property key="indentSize" type="integer" defaultValue="2">
+                <caption>Indent size</caption>
+                <description></description>
+            </property>
+            <property key="collapsible" type="expression" required="false" defaultValue="true">
+                <caption>Collapsible</caption>
+                <description></description>
+                <returnType type="Boolean" />
+            </property>
+            <property key="showLineNumbers" type="expression" required="false" defaultValue="true">
+                <caption>Show line numbers</caption>
+                <description></description>
+                <returnType type="Boolean" />
+            </property>
+            <property key="invalidXmlMessage" type="textTemplate">
+                <caption>Invalid XML message</caption>
+                <description></description>
+                <translations>
+                    <translation lang="en_US">Invalid XML</translation>
+                    <translation lang="en_GB">Invalid XML</translation>
+                    <translation lang="nl_NL">Ongeldig XML</translation>
+                </translations>
+            </property>
+            <systemProperty key="Label"/>
         </propertyGroup>
     </properties>
 </widget>
