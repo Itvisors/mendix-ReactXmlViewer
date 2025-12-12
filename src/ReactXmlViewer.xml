@@ -3,9 +3,8 @@
         supportedPlatform="Web"
         xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
-    <name>React Xml Viewer</name>
+    <name>React XML Viewer</name>
     <description>XML viewer based on react-xml-viewer</description>
-    <icon/>
     <properties>
         <propertyGroup caption="General">
             <property key="xmlAttr" type="attribute" setLabel="true"> 
@@ -38,6 +37,48 @@
                 </translations>
             </property>
             <systemProperty key="Label"/>
+        </propertyGroup>
+        <propertyGroup caption="Theme">
+            <property key="attributeKeyColor" type="string" defaultValue="#2a7ab0">
+                <caption>Attribute key color</caption>
+                <description></description>
+            </property>
+            <property key="attributeValueColor" type="string" defaultValue="#008000">
+                <caption>Attribute value color</caption>
+                <description></description>
+            </property>
+            <property key="cdataColor" type="string" defaultValue="#1D781D">
+                <caption>CData color</caption>
+                <description></description>
+            </property>
+            <property key="commentColor" type="string" defaultValue="#aaa">
+                <caption>Comment color</caption>
+                <description></description>
+            </property>
+            <property key="fontFamily" type="string" defaultValue="monospace">
+                <caption>Font family</caption>
+                <description>Best to choose a monospace font to keep texts aligned vertically</description>
+            </property>
+            <property key="separatorColor" type="string" defaultValue="#333">
+                <caption>Separator color</caption>
+                <description></description>
+            </property>
+            <property key="tagColor" type="string" defaultValue="#d43900">
+                <caption>Tag color</caption>
+                <description></description>
+            </property>
+            <property key="textColor" type="string" defaultValue="#333">
+                <caption>Text color</caption>
+                <description></description>
+            </property>
+            <property key="lineNumberBackground" type="string" defaultValue="#eee">
+                <caption>Line number background</caption>
+                <description></description>
+            </property>
+            <property key="lineNumberColor" type="string" defaultValue="#222">
+                <caption>Line number color</caption>
+                <description></description>
+            </property>
         </propertyGroup>
     </properties>
 </widget>

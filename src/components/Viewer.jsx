@@ -1,7 +1,7 @@
 import XMLViewer from "react-xml-viewer";
 import { createElement } from "react";
 
-export function Viewer({ xml, indentSize, invalidXmlMessage, collapsible, showLineNumbers, widgetName }) {
+export function Viewer({ xml, indentSize, invalidXmlMessage, collapsible, showLineNumbers, theme, widgetName }) {
     const className = widgetName + " react-xml-viewer-widget";
     return (
         <div className={className}>
@@ -10,6 +10,7 @@ export function Viewer({ xml, indentSize, invalidXmlMessage, collapsible, showLi
                 indentSize={indentSize}
                 collapsible={collapsible}
                 showLineNumbers={showLineNumbers}
+                theme={theme}
                 invalidXml={<span className="react-xml-viewer-invalid-xml">{invalidXmlMessage}</span>}
             />
         </div>
