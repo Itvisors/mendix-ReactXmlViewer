@@ -1,5 +1,4 @@
 import XMLViewer from "react-xml-viewer";
-import { createElement } from "react";
 
 export function Viewer({ xml, indentSize, invalidXmlMessage, collapsible, showLineNumbers, theme, widgetName }) {
     const className = widgetName + " react-xml-viewer-widget";

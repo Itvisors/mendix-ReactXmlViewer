@@ -1,5 +1,4 @@
 /* eslint-disable sort-imports */
-import { createElement } from "react";
 
 import { Viewer } from "./components/Viewer";
 import "./ui/ReactXmlViewer.css";
