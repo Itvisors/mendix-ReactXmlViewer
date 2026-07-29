@@ -6,10 +6,10 @@ package nanoflowcommons.proxies;
 
 public enum GeocodingProvider
 {
-	Google("6772e08c-a25b-4f6d-b52b-25d93a291709"),
-	Geocodio("8be852c3-fad9-4810-9056-e4b9633c9576"),
-	LocationIQ("31e0b4f5-dc2f-4d0c-b718-c473f5808228"),
-	MapQuest("aa9e0f94-651f-4419-b53d-cfd0bd36fd90");
+	Google("66b6fd26-4597-42c3-b75e-6d2ea0a5b201"),
+	Geocodio("2a7e8284-10e6-4ed9-b2a3-9d5deee4ddd1"),
+	LocationIQ("a99df6e8-2ec9-4c83-841a-294916cf4e99"),
+	MapQuest("c2f9b5d4-869d-47d3-819b-d521d9011cf3");
 
 	private final java.lang.String i18nCaptionKey;
 	
